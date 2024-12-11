@@ -1,9 +1,9 @@
-# **<span style="color: darkblue; font: verdana;">Angry-Dinosaurs</span>**
+# **<span style="color: darkblue; font: verdana;">RegistroApp</span>**
 
-### Desarrollado por el profesor Cristián Gómez Vega
-### Correo Triskeledu: cgomezvega@triskeledu.cl
-### Correo DUOC: cri.gomezv@profesor.duoc.cl
-### www.triskeledu.cl
+### Desarrollado por: 
+### Emanuel Farias: ema.farias@duocuc.cl 
+### Claudio Rojas: claud.rojasp@duocuc.cl
+### Sección: 010D
 
 # Preparando mi celular y mi aplicación
 ## Preparando mi celular 
@@ -51,7 +51,7 @@ Windows:
 
 Nótese que **"cgome"** es el usuario del computador del profesor y allí debes poner el nombre de tu usuario de Windows.
 
-# Instrucciones para programar y ejecutar Angry-Dinosaurs
+# Instrucciones para programar y ejecutar RegistroApp
 ## Paquetes que debes instalar: 
 
 `ng add @angular/material`

@@ -49,7 +49,7 @@ export class InicioPage  {
 
     if (button === 'scan' && Capacitor.getPlatform() !== 'web'){
         this.mostrarMiclaseComponent(await this.scanner.scan());
-        this.selectedComponent = 'misdatos';
+        this.selectedComponent = 'miclase';
         return;
     }
     

@@ -15,12 +15,12 @@ export class APIClientService {
   httpOptions = {
     headers: new HttpHeaders({
       'content-type': 'application/json',
-       //'access-control-allow-origin': '*'
+      //'access-control-allow-origin': '*'
     })
   };
 
   //apiUrl = 'http://localhost:3000';
-  apiUrl = 'http://10.20.6.93:3005';//debes poner la ip del compu aqui y no cambiar el 3005 puedes iniciarlo con cors pero debes sacar los slash del url 'access-control-allow-origin': '*'
+  apiUrl = 'http://192.168.253.60:3005';//debes poner la ip del compu aqui y no cambiar el 3005 puedes iniciarlo con cors pero debes sacar los slash del url 'access-control-allow-origin': '*'
   postList: BehaviorSubject<Post[]> = new BehaviorSubject<Post[]>([]);
 
   constructor(private http: HttpClient) { }
