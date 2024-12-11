@@ -1,0 +1,46 @@
+<ion-footer>
+  <ion-toolbar color="primary" style="padding-bottom: 4px">
+    <ion-segment 
+      value="welcome" 
+      (ionChange)="sendClickEvent($event)"
+      [(ngModel)]="selectedButton"
+    >
+    
+
+      <ion-segment-button *ngIf="!isAdmin" value="welcome">
+        <ion-icon name="home" color="light"></ion-icon>
+        {{"HomePage.Button.Wellcome"|translate}}
+      </ion-segment-button>
+
+      <!-- <ion-segment-button value="codigoqr">
+        <ion-icon name="qr-code-outline" color="light"></ion-icon>
+        {{"Footer.Codigoq"|translate}}
+      </ion-segment-button> -->
+
+      <ion-segment-button *ngIf="!isAdmin" value="miclase">
+        <ion-icon name="book" color="light" ></ion-icon>
+        {{"Footer.Miclase"|translate}}
+      </ion-segment-button>
+
+      <ion-segment-button value="foro">
+        <ion-icon name="pencil-outline" color="light" ></ion-icon>
+        {{"Footer.Foro"|translate}}
+      </ion-segment-button>
+
+      <ion-segment-button value="misdatos">
+        <ion-icon name="person"  size="large" color="light" ></ion-icon>
+        {{"Footer.Misdatos"|translate}}
+      </ion-segment-button>
+
+      <ion-segment-button *ngIf="isAdmin" value="usuarios">
+        <ion-icon name="people-circle-outline"  size="large" color="light" ></ion-icon>
+        {{"Ingreso.Usuarios"|translate}} 
+      </ion-segment-button>
+
+      
+
+
+    </ion-segment>
+
+  </ion-toolbar>
+</ion-footer>

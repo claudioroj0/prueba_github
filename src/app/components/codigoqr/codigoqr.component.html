@@ -1,0 +1,31 @@
+
+<ion-content [fullscreen]="true" class="ion-padding-horizontal ion-text-center">
+  <div class="logo-container ion-text-center">
+    <img src="../../../assets/images/LogoDuoc.jpeg" alt="Logo Duoc UC" class="logo " />
+  </div>
+  <div class="centrar">
+    <div class="enmarcar">
+      <h1 >
+        {{ 'Welcome.Bienvenido' | translate }} {{ user.firstName }} {{ user.lastName }}!
+      </h1>
+      <h2 >
+        {{ 'CodigoQR.Escaneatitle' | translate }}
+      </h2>
+      
+      <div class="frame">
+        <video class="video" #video></video>
+        <div class="qr-overlay"></div>
+        <div class="moving-horizontal-line"></div>
+      </div>
+    
+      <canvas #canvas hidden></canvas>
+      
+    
+
+      <ion-button (click)="stopQrScanning()" shape="round" color="medium">
+        <ion-icon slot="start" name="stop-circle-outline"></ion-icon>
+        {{ 'CodigoQR.DetenerEscaneo' | translate }}
+      </ion-button>
+    </div>
+  </div>
+

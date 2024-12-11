@@ -1,0 +1,268 @@
+{
+  "AppName": "RegistroApp",
+  "AuthorText": "Desarrollado por:",
+  "Author": "Emanuel Farias y Claudio Rojas",
+  "Language": "Idioma",
+  "Language.English": "English",
+  "Language.Spanish": "Español",
+  "Language.Mapudungun": "Mapudungun",
+
+  "Logoutt":"Cerrar Sesión",
+
+
+  "Footer":{
+    "Codigoq":"QR",
+    "Miclase":"Mi clase",
+    "Foro":"Foro",
+    "Misdatos":"Mis datos",
+    "Usuarios":"Usuarios" 
+  },
+
+  "Ingreso.Tema": "Tema",
+  "Ingreso.Titulo": "Inicio de Sesión",
+  "Ingreso.Cuenta": "Cuenta",
+  "Ingreso.Placeholder.Cuenta": "Ej: atorres",
+  "Ingreso.Contrasena": "Contraseña",
+  "Ingreso.Placeholder.Contrasena": "Ej: 1234",
+  "Ingreso.BotonIngresar": "Ingresar",
+  "Ingreso.OlvideContrasena": "Recuperar Contraseña",
+  "Ingreso.RutaDuoc": "Mi Ruta a DUOC",
+  "Ingreso.Registrate": "Registrar",
+  "Ingreso.Registrarme": "Registrarme",
+  "Ingreso.Usuarios": "Usuarios",
+
+  "Welcome": {
+    "TituloSistema": "Sistema de Asistencia DUOC",
+    "Bienvenido": "¡Bienvenido(a)!"
+  },
+
+  "HomePage.Button.Wellcome": "Inicio",
+  "HomePage.Button.Scan": "Escanear",
+  "HomePage.Button.Dinosaur": "Dinosaurio",
+  "HomePage.Button.Forum": "Foro",
+
+  "ThemePage.Label.ColorTheme": "Tema de color:",
+  "ThemePage.Color.Light": "Claro",
+  "ThemePage.Color.Dark": "Oscuro",
+  "ThemePage.Color.Green": "Verde",
+  "ThemePage.Color.Red": "Rojo",
+  "ThemePage.Color.Facebook": "Facebook",
+  "ThemePage.Color.Instagram": "Instagram",
+  "ThemePage.Color.Duoc": "DUOC",
+
+  "ThemePage.Button.Primary": "Botón Primario",
+  "ThemePage.Button.Secondary": "Botón Secundario",
+  "ThemePage.Button.Tertiary": "Botón Terciario",
+  "ThemePage.Button.Success": "Botón Éxito",
+  "ThemePage.Button.Warning": "Botón Advertencia",
+  "ThemePage.Button.Danger": "Botón Peligro",
+  "ThemePage.Button.Light": "Botón Claro",
+  "ThemePage.Button.Dark": "Botón Oscuro",
+  "ThemePage.Button.Home": "Inicio",
+  "ThemePage.Button.Logout": "Salir",
+
+  "ThemePage.Card.Title": "Título de la Tarjeta",
+  "ThemePage.Card.Subtitle": "Subtítulo de la Tarjeta",
+  "ThemePage.Card.Content": "Este es el contenido de la tarjeta. Puedes personalizar los colores de la tarjeta y su contenido.",
+
+  "ThemePage.List.Title": "Listas",
+  "ThemePage.List.Item1": "Elemento de Lista 1",
+  "ThemePage.List.Item2": "Elemento de Lista 2",
+  "ThemePage.List.Item3": "Elemento de Lista 3",
+
+  "ThemePage.Calendar.Title": "Calendarios",
+
+  "ThemePage.Form.Title": "Ingreso de datos",
+  "ThemePage.Form.NameLabel": "Nombre",
+  "ThemePage.Form.NamePlaceholder": "Ingresa tu nombre",
+  "ThemePage.Form.DescriptionLabel": "Descripción",
+  "ThemePage.Form.DescriptionPlaceholder": "Escribe aquí una descripción...",
+  "ThemePage.Form.ToggleLabel": "Activar notificaciones",
+  "ThemePage.Form.CheckboxLabel": "Acepto los términos",
+
+  "correcto":{
+    "titulo":"Sistema de Asistencia DUOC",
+    "Contrasena":"Tu contraseña es:",
+    "Regresar":"Regresar"
+
+  },
+
+  "incorrecto":{
+    "titulo":"Sistema de Asistencia DUOC",
+    "sorry":"!Lo sentimos pero los datos ingresados son incorrectos¡",
+    "login":"Iniciar Sesión"
+  },
+
+  "MisDatos": {
+    "Titulo": "Mis Datos Personales",
+    "Cuenta": "Cuenta",
+    "Placeholder": {
+      "Cuenta": "Ej: atorres",
+      "Nombre": "Ej: Ana",
+      "Apellido": "Ej: Torres",
+      "Correo": "Ej: atorres@duocuc.cl",
+      "Direccion": "San Luis 234, La Florida",
+      "PreguntaSecreta": "Ej: ¿Cuál es tu animal favorito?",
+      "RespuestaSecreta": "Ej: gato",
+      "Educacion": "Seleccione nivel",
+      "Contrasena": "Ej: 123456",
+      "ConfirmarContrasena": "Ej: 123456"
+    },
+    "Nombre": "Nombres",
+    "Apellido": "Apellidos",
+    "Correo": "Correo",
+    "Direccion": "Dirección",
+    "PreguntaSecreta": "Pregunta Secreta",
+    "RespuestaSecreta": "Respuesta Secreta",
+    "Educacion": "Educación",
+    "FechaNacimiento": "Fecha de Nacimiento",
+    "Contrasena": "Contraseña",
+    "ConfirmarContrasena": "Confirmar Contraseña",
+    "Actualizar": "Actualizar",
+    "Pregunta":"Pregunta Secreta",
+    "Respuesta":"Respuesta Secreta",
+    "Nacimiento":"Fecha de Nacimiento"
+  },
+
+  "Miclase": {
+    "Titulo": "Mi Clase",
+    "Sede": "Sede",
+    "Sigla": "Sigla",
+    "Seccion": "Sección",
+    "Asignatura": "Asignatura",
+    "Profesor": "Profesor",
+    "Dia": "Día",
+    "BloqueInicio": "Bloque de Inicio",
+    "BloqueTermino": "Bloque de término",
+    "Inicio": " Hora de Inicio",
+    "Termino": "Hora de Término",
+    "EscanearQR": "¡Primero debes escanear un código QR!",
+    "notf":"No se encontraron datos de asistencia"
+  },
+
+  "Foro": {
+    "GestionPublicaciones": "Gestión de Publicaciones",
+    "Titulo": "Título",
+    "Descripcion": "Descripción",
+    "IngreseTitulo": "Ingresa el título de la publicación",
+    "EscribeContenido": "Escribe el contenido de la publicación",
+    "Limpiar": "Limpiar",
+    "Guardar": "Guardar",
+    "Actualizar": "Actualizar",
+    "PublicacionesRecientes": "Publicaciones Recientes",
+    "PublicacionNumero": "Publicación #"
+  },
+
+  "CodigoQR": {
+    "Escaneatitle":"Escanea el código QR para registrar tu asistencia a clases",
+    "DetenerEscaneo": "Detener escaneo de QR"
+  },
+
+  "RespuestaCorrecta": {
+    "Titulo": "Tu Respuesta es Correcta!",
+    "Contraseña": "Tu Contraseña es:",
+    "Regresar": "Regresar"
+  },
+
+  "RespuestaIncorrecta": {
+    "Titulo": "Tu Respuesta es",
+    "Incorrecto": "Incorrecta",
+    "Intentar": "Debes intentar nuevamente",
+    "Regresar": "Regresar"
+  },
+
+  "Miruta": {
+    "Titulo": {
+      "Mapa": "Mapa"
+    },
+    "Boton": {
+      "Duoc": "DUOC",
+      "Aqui": "Aquí",
+      "Ruta": "Ruta"
+    }
+  },
+
+  "Correo": {
+    "Titulo": {
+      "SistemaAsistencia": "Sistema de Asistencia DUOC",
+      "RecuperarContrasena": "Recuperar Contraseña"
+    },
+    "Paso1": {
+      "IngresarCorreo": "Paso 1: Ingresa tu Correo"
+    },
+    "Input": {
+      "IngresarCorreo": "Ingresa tu correo",
+      "Placeholder": "Ej: atorres@duocuc.cl"
+    },
+    "Boton": {
+      "RecuperarContrasena": "Recuperar Contraseña"
+    },
+    "Link": {
+      "IniciarSesion": "Iniciar Sesión"
+    }
+  },
+
+  
+
+  "Pregunta": {
+    "Titulo": {
+      "SistemaAsistencia": "Sistema de Asistencia DUOC",
+      "RecuperarContrasena": "Recuperar Contraseña"
+    },
+    "Paso2": {
+      "PreguntaSecreta": "Paso 2: Responde la pregunta secreta"
+    },
+    "Input": {
+      "IngresarRespuesta": "Ingresa tu respuesta",
+      "Placeholder": "Escribe aquí tu respuesta"
+    },
+    "Boton": {
+      "RecuperarContrasena": "Recuperar Contraseña"
+    },
+    "Link": {
+      "IniciarSesion": "Iniciar Sesión"
+    }
+  },
+
+  "Registrar": {
+    "Titulo": "Registro de usuario",
+    "Cuenta": "Usuario",
+    "Nombre": "Nombre",
+    "Apellido": "Apellido",
+    "Correo": "Correo electrónico",
+    "Direccion": "Dirección",
+    "PreguntaSecreta": "Pregunta secreta",
+    "RespuestaSecreta": "Respuesta secreta",
+    "Educacion": "Nivel Educacional",
+    "FechaNacimiento": "Fecha de nacimiento",
+    "Contrasena": "Contraseña",
+    "ConfirmarContrasena": "Confirmar contraseña",
+    "Boton": "Registrar",
+    "Exito": "¡Registro exitoso!",
+    "Error": "Error en el registro.",
+    "ErrorConexion": "Error de conexión con la base de datos.",
+    "Validacion": {
+      "CamposRequeridos": "Por favor, completa todos los campos.",
+      "ContrasenasNoCoinciden": "Las contraseñas no coinciden.",
+      "EmailInvalido": "El correo electrónico no es válido.",
+      "UsuarioExistente": "El nombre de usuario ya existe."
+    }
+  },
+
+  "Usuario": {
+    "Usuario": "Usuario",
+    "Nombre": "Nombre",
+    "Correo": "Correo",
+    "Direccion": "Dirección",
+    "NivelEducacional": "Nivel Educacional",
+    "FechaNacimiento": "Fecha de Nacimiento"
+  },
+
+  "AccesoRestringido": {
+    "Titulo":"Acceso Restringido",
+    "Mensaje":"Solo el ADMIN tiene acceso"
+  }
+
+  
+
+}

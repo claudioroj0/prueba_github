@@ -1,0 +1,262 @@
+{
+  "AppName": "Epu Tüfachi App",
+  "AuthorText": "Witralünu mew:",
+  "Author": "Emanuel Farias y Claudio Rojas",
+  "Language": "Dungu",
+  "Language.English": "Inglés",
+  "Language.Spanish": "Español",
+  "Language.Mapudungun": "Mapudungun",
+
+  "Logoutt":"Ñiñolün Ñamün",
+
+  "Footer":{
+      "Codigoq":"Kodigu QR",
+      "Miclase":"Ñi Koyang",
+      "Foro":"Foro",
+      "Misdatos":"Ñi Wüla",
+      "Usuarios":"Afeltuche"
+    },
+  
+  "Ingreso.Tema": "Txem",
+  "Ingreso.Titulo": "Txipen",
+  "Ingreso.Cuenta": "Epu afeltu",
+  "Ingreso.Placeholder.Cuenta": "Eg: atorres",
+  "Ingreso.Contrasena": "Küpal",
+  "Ingreso.Placeholder.Contrasena": "Eg: 1234",
+  "Ingreso.BotonIngresar": "Txefün",
+  "Ingreso.OlvideContrasena": "Küpal Witralünu",
+  "Ingreso.RutaDuoc": "Ñi Ñamkülelu DÜOC mew",
+  "Ingreso.Registrate": "Rakiduamnieiñ",
+  "Ingreso.Registrarme": "Rakiduamnien",
+  "Ingreso.Usuarios": "Dungupeyüm",
+
+  "Welcome": {
+    "TituloSistema": "Duoc Püñeñ Antüwigkul",
+    "Bienvenido": "¡Küme Wüñoyn!"
+  },
+
+  "HomePage.Button.Wellcome": "Rüpü",
+  "HomePage.Button.Scan": "Wüno",
+  "HomePage.Button.Dinosaur": "Ümün",
+  "HomePage.Button.Forum": "Kom aukiñ",
+
+  "ThemePage.Label.ColorTheme": "Txem Kütral",
+  "ThemePage.Color.Light": "Txekulen",
+  "ThemePage.Color.Dark": "Ranpan",
+  "ThemePage.Color.Green": "Karü",
+  "ThemePage.Color.Red": "Kallfü",
+  "ThemePage.Color.Facebook": "Facebook",
+  "ThemePage.Color.Instagram": "Instagram",
+  "ThemePage.Color.Duoc": "Duoc",
+
+  "ThemePage.Button.Primary": "Txem Tüfachi",
+  "ThemePage.Button.Secondary": "Txem Epu",
+  "ThemePage.Button.Tertiary": "Txem Küla",
+  "ThemePage.Button.Success": "Txem We",
+  "ThemePage.Button.Warning": "Txem Füre",
+  "ThemePage.Button.Danger": "Txem Külpe",
+  "ThemePage.Button.Light": "Txem Txekulen",
+  "ThemePage.Button.Dark": "Txem Ranpan",
+  "ThemePage.Button.Home": "Rüpü",
+  "ThemePage.Button.Logout": "Ütrefün",
+
+  "ThemePage.Card.Title": "Üllcha Weli",
+  "ThemePage.Card.Subtitle": "We ñi weli",
+  "ThemePage.Card.Content": "Tay küme künefe tüfachi weli mew.",
+
+  "ThemePage.List.Title": "Küme List",
+  "ThemePage.List.Item1": "Item 1",
+  "ThemePage.List.Item2": "Item 2",
+  "ThemePage.List.Item3": "Item 3",
+
+  "ThemePage.Calendar.Title": "Küme Antüwigkul",
+
+  "ThemePage.Form.Title": "Txem Epu dungu",
+  "ThemePage.Form.NameLabel": "Düngun",
+  "ThemePage.Form.NamePlaceholder": "Trafen düngün",
+  "ThemePage.Form.DescriptionLabel": "We Ütrefun",
+  "ThemePage.Form.DescriptionPlaceholder": "Dümen Txem mew",
+  "ThemePage.Form.ToggleLabel": "Inche Eymün",
+  "ThemePage.Form.CheckboxLabel": "Afafan ka",
+
+  "correcto": {
+    "titulo": "Duoc Püñeñ Antüwigkul",
+    "Contrasena": "Fenteñ küpal",
+    "Regresar": "Inafal"
+  },
+
+  "incorrecto": {
+    "titulo": "Duoc Püñeñ Antüwigkul",
+    "sorry": "!Fütxew duam mew¡",
+    "login": "Txipen"
+  },
+
+  "MisDatos": {
+    "Titulo": "Üllcha dungu",
+    "Cuenta": "Afer",
+    "Placeholder": {
+      "Cuenta": "Eg: atorres",
+      "Nombre": "Eg: Ana",
+      "Apellido": "Eg: Torres",
+      "Correo": "Eg: atorres@duocuc.cl",
+      "Direccion": "San Luis 234, La Florida",
+      "PreguntaSecreta": "Eg: Inche küpan küpan",
+      "RespuestaSecreta": "Eg: kuitrán",
+      "Educacion": "Txem küme",
+      "Contrasena": "Eg: 123456",
+      "ConfirmarContrasena": "Eg: 123456"
+    },
+    "Nombre": "Düüngün",
+    "Apellido": "Afeltun",
+    "Correo": "Correo",
+    "Direccion": "Ñamkülen",
+    "PreguntaSecreta": "Afafan Küpan",
+    "RespuestaSecreta": "Afafan",
+    "Educacion": "Txem Küme",
+    "FechaNacimiento": "Wüñoi Antü",
+    "Contrasena": "Küpal",
+    "ConfirmarContrasena": "Küpal Eymün",
+    "Actualizar": "Afafan",
+    "Pregunta":"Pewma Inchelu",
+    "Respuesta":"Ñamku Inchelu",
+    "Nacimiento":"Ñamün Inan"
+  },
+
+  "Miclase": {
+    "Titulo": "Inche ñi dungu",
+    "Sede": "Sede",
+    "Sigla": "Inche Sigla",
+    "Seccion": "Kümelkün",
+    "Asignatura": "Weni Afafan",
+    "Profesor": "Afafan",
+    "Dia": "Antü",
+    "BloqueInicio": "Inche fente",
+    "BloqueTermino": "Inche Witralünu",
+    "Inicio": "Amiwün Tüfachi",
+    "Termino": "Amiwün Mewün",
+    "EscanearQR": "Inche QR wüna txefün",
+    "notf":"Iñchinu tañi kiñün ñamün mew"
+  },
+
+  "Foro": {
+    "GestionPublicaciones": "Ütrefun aukiñ",
+    "Titulo": "Txem",
+    "Descripcion": "Txem küme",
+    "IngreseTitulo": "Ütrefun txem mew",
+    "EscribeContenido": "Txem afafan mew",
+    "Limpiar": "Fuchi",
+    "Guardar": "Txefün",
+    "Actualizar": "Txefün mew",
+    "PublicacionesRecientes": "Ütrefun afafan",
+    "PublicacionNumero": "Afafan #"
+  },
+
+  "CodigoQR": {
+    "Escaneatitle": "Afafan QR fente aukiñ",
+    "DetenerEscaneo": "Fuchi QR"
+  },
+
+  "RespuestaCorrecta": {
+    "Titulo": "Txem",
+    "Contraseña": "Fenteñ küpal",
+    "Regresar": "Inafal"
+  },
+
+  "RespuestaIncorrecta": {
+    "Titulo": "Txem Afafan",
+    "Incorrecto": "Txem Afafan",
+    "Intentar": "Witralünu txefün",
+    "Regresar": "Inafal"
+  },
+
+  "Miruta": {
+    "Titulo": {
+      "Mapa": "Txem Mapu"
+    },
+    "Boton": {
+      "Duoc": "DUOC",
+      "Aqui": "Aukiñ",
+      "Ruta": "Txem"
+    }
+  },
+
+  "Correo": {
+    "Titulo": {
+      "SistemaAsistencia": "Duoc Püñeñ Antüwigkul",
+      "RecuperarContrasena": "Txem Küpal"
+    },
+    "Paso1": {
+      "IngresarCorreo": "Paso 1: Txem Correo"
+    },
+    "Input": {
+      "IngresarCorreo": "Correo Txem",
+      "Placeholder": "Eg: atorres@duocuc.cl"
+    },
+    "Boton": {
+      "RecuperarContrasena": "Txem Küpal"
+    },
+    "Link": {
+      "IniciarSesion": "Txipen"
+    }
+  },
+
+  "Pregunta": {
+    "Titulo": {
+      "SistemaAsistencia": "Duoc Püñeñ Antüwigkul",
+      "RecuperarContrasena": "Txem Küpal"
+    },
+    "Paso2": {
+      "PreguntaSecreta": "Paso 2: Küpan Afafan"
+    },
+    "Input": {
+      "IngresarRespuesta": "Txem afafan",
+      "Placeholder": "Afafan Txem"
+    },
+    "Boton": {
+      "RecuperarContrasena": "Txem Küpal"
+    },
+    "Link": {
+      "IniciarSesion": "Txipen"
+    }
+  },
+
+  "Registrar": {
+    "Titulo": "Dungu afeluwun",
+    "Cuenta": "Pewma ngenelu",
+    "Nombre": "Ngütram",
+    "Apellido": "Rakiduam",
+    "Correo": "Elum zewma",
+    "Direccion": "Lafken ruka",
+    "PreguntaSecreta": "Wefkayu ngenelu",
+    "RespuestaSecreta": "Wefkayu dungu",
+    "Educacion": "Kimün püle",
+    "FechaNacimiento": "Choyün antü",
+    "Contrasena": "Pewma dungu",
+    "ConfirmarContrasena": "Pewma dungu zugun",
+    "Boton": "Afeliwün",
+    "Exito": "¡Afeliwün zugun ka küme dungümün!",
+    "Error": "Afeliwün zugun müley.",
+    "ErrorConexion": "Dungu trafmün müley ka küme afan tüfachi zugun.",
+    "Validacion": {
+      "CamposRequeridos": "Peyüm afmülen tüfachi zugun.",
+      "ContrasenasNoCoinciden": "Pewma dungu zugun müle küzawkülen.",
+      "EmailInvalido": "Elum zewma zugun müle trarikalen.",
+      "UsuarioExistente": "Pewma ngenelu zugun ya müle."
+    }
+  },
+
+  "Usuario": {
+    "Usuario": "Afeltu",
+    "Nombre": "Düüngün",
+    "Correo": "Correo",
+    "Direccion": "Ñamkülen",
+    "NivelEducacional": "Txem Küme",
+    "FechaNacimiento": "Wüñoi Antü"
+  },
+
+  "AccesoRestringido": {
+    "Titulo": "Ütrefün Kuyfi",
+    "Mensaje": "Kiñe ADMIN küpa ütrefün mew"
+  }
+
+}

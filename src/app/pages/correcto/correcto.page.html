@@ -1,0 +1,21 @@
+<ion-content [fullscreen]="true">
+  <!-- Imagen del logo centrada y con tamaño mediano -->
+  <div class="logo-container ion-text-center">
+    <img src="../../../assets/images/LogoDuoc.jpeg" alt="Logo Duoc UC" class="logo" />
+  </div>
+
+  <div class="centrar">
+    <div class="enmarcar ion-text-center">
+      <ion-toolbar class="ion-padding-top">
+        <h1 class="titulo-text">{{ 'RespuestaCorrecta.Titulo' | translate }}</h1>
+        <img alt="DUOC" src="../../../assets/images/correcto.jpeg" class="foto-portada" />
+        <h2>{{ 'RespuestaCorrecta.Contraseña' | translate }}  {{ password }} </h2>
+      </ion-toolbar>
+
+      <ion-button shape="round" size="small" (click)="navegarIngreso()">
+        <ion-icon slot="start" name="log-out"></ion-icon>
+        {{ 'RespuestaCorrecta.Regresar' | translate }}
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

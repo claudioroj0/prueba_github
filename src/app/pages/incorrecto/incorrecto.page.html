@@ -1,0 +1,21 @@
+<ion-content type="text" disabled [fullscreen]="true">  
+  <!-- Imagen del logo centrada y con tamaño mediano -->
+  <div class="logo-container ion-text-center">
+    <img src="../../../assets/images/LogoDuoc.jpeg" alt="Logo Duoc UC" class="logo" />
+  </div>
+  <h1 class="titulo-text">{{"incorrecto.titulo"|translate}}</h1>
+  <div class="centrar">
+    <div class="enmarcar ion-text-center">
+      <ion-toolbar class="ion-padding-top">
+        
+        <img alt="DUOC" src="../../../assets/images/incorrecto.jpeg" class="foto-portada" />
+        <h2>{{"incorrecto.sorry"|translate}} </h2>
+      </ion-toolbar>
+
+      <ion-button shape="round" size="small" (click)="navegarIngreso()">
+        <ion-icon slot="start" name="log-out"></ion-icon>
+        {{"incorrecto.login"|translate}}
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

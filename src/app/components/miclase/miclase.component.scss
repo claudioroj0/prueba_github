@@ -1,0 +1,116 @@
+
+  /* General table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para la tabla */
+    overflow: hidden;
+  }
+
+  th, td {
+    padding: 12px 15px;
+    border: 1px solid #FFB800;//bordes de la tabla 
+    text-align: left;
+  }
+
+  th {
+    background-color: #FFB800; /* Fondo amarillo para el encabezado */
+    font-weight: bold;
+    color: #1A1A1A; /* Texto oscuro para el encabezado */
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 2px solid #666666; /* Línea más gruesa debajo del encabezado */
+  }
+
+  td {
+    padding: 12px 15px;
+    color: #666666; /* Texto gris */
+    background-color: #eeeeee; /* Fondo gris claro para las filas */
+    border: 1px solid #FFB800; /* Bordes de color amarillo */
+  }
+
+  tr:nth-child(even) td {
+    background-color: #FFFFFF;//color fila 2
+  }
+
+  tr:hover td {
+    background-color: #FFB800; /* Fondo amarillo al pasar el cursor */
+    color: #1A1A1A; /* Texto oscuro para mejor contraste */
+  }
+  /* Logo and layout styling */
+  .logo {
+    width: 250px; /* Tamaño más grande para el logo */
+    height: auto; /* Mantiene la proporción */
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 30px; /* Separación del logo con el título */
+  }
+
+  ion-toolbar, ion-footer {
+    background-color: #FFB800;
+  }
+
+  ion-button {
+    --border-width: 0px;
+    --box-shadow: none;
+  }
+
+  /* Layout for titles and buttons */
+  .centrar {
+    margin-top: 20px; /* Añadir margen superior para separar los títulos del logo */
+  }
+
+  .titulo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  .duoc-icon img {
+    width: 80px;
+    height: auto;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  .titulo-text {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .botones-container {
+    margin: 120px 0;
+    margin-bottom: 100px;
+  }
+
+  .botones-container ion-button {
+    margin: 0 5px;
+  }
+
+  /* Content adjustments */
+  ion-content {
+    margin-bottom: 300px;
+    --background: #eeeeee;
+  }
+
+  h1,h2,p{
+    color: #666666
+  }
+
+  .paleta-colores{
+    color: #1A1A1A;
+    color: #FFFFFF;
+    color: #FFB800;
+    color: #666666;
+    color: #000000;
+    color: #eeeeee;
+  }

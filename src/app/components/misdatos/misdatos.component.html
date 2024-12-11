@@ -1,0 +1,76 @@
+<ion-content [fullscreen]="true">
+    <div class="logo-container">
+    <img class="logo" src="../../../assets/images/LogoDuoc.jpeg" alt="Logo Duoc UC"  />
+   </div>
+  
+
+    <!-- Card contenedor principal -->
+    <ion-card class="enmarcar">
+      <ion-card-header>
+        <h2 id="datos_titulo" class="sato">{{'MisDatos.Titulo' | translate}}</h2>
+      </ion-card-header>
+        <div class="div2">
+        <ion-item class="interno" #itemCuenta >
+          <ion-input id="datos_cuenta" [(ngModel)]="usuario.userName" label="{{'MisDatos.Cuenta' | translate}}" labelPlacement="floating" placeholder="{{'MisDatos.Placeholder.Cuenta' | translate}}"></ion-input>
+        </ion-item>
+
+        <ion-item class="interno" #itemNombre>
+          <ion-input id="datos_nombre" [(ngModel)]="usuario.firstName" label="{{'MisDatos.Nombre' | translate}}" labelPlacement="floating" placeholder="{{'MisDatos.Placeholder.Nombre' | translate}}"></ion-input>
+        </ion-item>
+
+        <ion-item class="interno" #itemApellido>
+          <ion-input id="datos_apellido" [(ngModel)]="usuario.lastName" label="{{'MisDatos.Apellido' | translate}}" labelPlacement="floating" placeholder="{{'MisDatos.Placeholder.Apellido' | translate}}"></ion-input>
+        </ion-item>
+
+        <ion-item class="interno" #itemCorreo>
+          <ion-input id="datos_correo" [(ngModel)]="usuario.email" label="{{'MisDatos.Correo' | translate}}" labelPlacement="floating" placeholder="{{'MisDatos.Placeholder.Correo' | translate}}"></ion-input>
+        </ion-item>
+
+        <ion-item class="interno" #itemPreguntaSecreta>
+          <ion-input id="datos_preguntas" [(ngModel)]="usuario.secretQuestion" label="{{'MisDatos.Pregunta' | translate}}" labelPlacement="floating" placeholder="{{'MisDatos.Placeholder.PreguntaSecreta' | translate}}"></ion-input>
+        </ion-item>
+
+        <ion-item class="interno" #itemRespuestaSecreta>
+          <ion-input id="datos_respuestas" [(ngModel)]="usuario.secretAnswer" label="{{'MisDatos.Respuesta' | translate}}" labelPlacement="floating" placeholder="{{'MisDatos.Placeholder.RespuestaSecreta' | translate}}"></ion-input>
+        </ion-item>
+
+        <ion-item id="datos_e" #itemEducacion class="font-size-12 interno">
+          <ion-select id="datos_educa" [(ngModel)]="usuario.educationalLevel!.id" (ionChange)="actualizarNivelEducacional($event)" label="{{'MisDatos.Educacion' | translate}}" position="floating">
+            <ion-select-option id="datos_educados" *ngFor="let nivelEducacional of listaNivelesEducacionales" [value]="nivelEducacional.id">
+              {{nivelEducacional.name}}
+            </ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item  #itemFechaNacimiento class="font-size-12 interno">
+          <app-date-picker id="datos_fecha"
+            [(ngModel)]="usuario.dateOfBirth"
+            (ionChange)="onFechaNacimientoChange($event)"
+            label="{{'MisDatos.FechaNacimiento' | translate}}"
+            labelPlacement="floating">
+          </app-date-picker>
+        </ion-item>
+        
+        <ion-item class="interno"><ion-input id="datos_direccion" label="{{'MisDatos.Direccion' | translate}}" labelPlacement="floating" [(ngModel)]="usuario.address"></ion-input></ion-item>
+
+        <ion-item class="interno" #itemContrasena>
+          <ion-input id="datos_contraseña" [(ngModel)]="usuario.password"
+            label="{{'MisDatos.Contrasena' | translate}} " labelPlacement="floating" type="password"
+            placeholder="{{'MisDatos.Placeholder.Apellido' | translate}}"></ion-input>
+        </ion-item>
+
+        <ion-item class="interno" #itemRepetirContrasena>
+          <ion-input [(ngModel)]="usuario.password"
+            label="{{'MisDatos.ConfirmarContrasena' | translate}}" labelPlacement="floating" type="password"
+            placeholder="{{'MisDatos.Placeholder.Apellido' | translate}}"></ion-input>
+        </ion-item>
+        
+        
+      </div>
+      <ion-button id="datos_actualizar" class="botones-container" shape="round"  color="medium"
+          (click)="actualizarUsuario()">
+          {{'MisDatos.Actualizar' | translate}} 
+        </ion-button>
+    </ion-card>
+
+</ion-content>

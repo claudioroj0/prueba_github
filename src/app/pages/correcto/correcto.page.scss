@@ -1,0 +1,83 @@
+/* Fondo principal */
+ion-content {
+  --background: #eeeeee; /* Fondo gris claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Contenedor del logo */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 250px; /* Tamaño más grande para el logo */
+  height: auto; /* Mantiene la proporción */
+}
+
+/* Título principal centrado */
+.titulo-text {
+  text-align: center;
+  font-size: 1.5em;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+/* Subtítulo */
+h2 {
+  color: #666666;
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* Card principal para los elementos internos */
+.enmarcar {
+  max-width: 420px;
+  width: 100%;
+  margin: auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee; /* Borde gris claro */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 8px;
+}
+
+/* Imagen central dentro del card */
+.foto-portada {
+  width: 200px;
+  height: 200px;
+  
+  
+}
+
+ion-toolbar{
+  --background: #eeeeee;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Botón de navegación */
+ion-button {
+  margin-top: 20px;
+   /* Fondo amarillo */
+  color: #000000; /* Texto en negro */
+  font-weight: bold;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.paleta-colores{
+    color: #1A1A1A;
+    color: #FFFFFF;
+    color: #FFB800;
+    color: #666666;
+    color: #000000;
+    color: #eeeeee;
+  }

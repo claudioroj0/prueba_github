@@ -1,0 +1,63 @@
+<ion-content>
+  <div class="logo-container ion-text-center">
+    <img src="../../../assets/images/LogoDuoc.jpeg" alt="Logo Duoc UC" class="logo " />
+  </div>
+  <a id="topOfPage" href="#topOfPage"></a>
+  <!-- Formulario para crear/editar publicaciones -->
+  <ion-card color="primary">
+    <ion-card-header>
+      <ion-card-title>{{ 'Foro.GestionPublicaciones' | translate }}</ion-card-title>
+      <ion-card-subtitle>{{ selectedPostText }}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating" color="primary">{{ 'Foro.Titulo' | translate }}</ion-label>
+        <ion-input id="foro_titulo" [(ngModel)]="post.title" placeholder="{{ 'Foro.IngreseTitulo' | translate }}"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" color="primary">{{ 'Foro.Descripcion' | translate }}</ion-label>
+        <ion-textarea id="foro_contenido" [(ngModel)]="post.body" placeholder="{{ 'Foro.EscribeContenido' | translate }}"></ion-textarea>
+      </ion-item>
+
+      <div class="ion-text-center margin-top-6 ">
+        <ion-button color="medium" shape="round" (click)="cleanPost()">{{ 'Foro.Limpiar' | translate }}</ion-button>
+        <ion-button id="foro_actualizar" color="primary" shape="round" (click)="savePost()">
+          {{ post.id ? ('Foro.Actualizar' | translate) : ('Foro.Guardar' | translate) }}
+        </ion-button>
+      </div>
+      
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Lista de publicaciones recientes -->
+  <ion-card class="sin-bordes" color="primary">
+    <ion-card-title class="con-padding-top">{{ 'Foro.PublicacionesRecientes' | translate }}</ion-card-title>
+  </ion-card>
+
+  <ion-list >
+    <ion-card  *ngFor="let post of posts; trackBy: getPostId">
+      <ion-card-header color="primary">
+        <h6 >{{ 'Foro.PublicacionNumero' | translate }} #{{ post.id }} - {{ post.author }}</h6>
+        <h4 >{{ post.title }}</h4>
+      </ion-card-header>
+  
+      <ion-card-content >
+        <p>{{ post.body }}</p>
+      </ion-card-content>
+  
+      <!-- Contenedor para alinear los botones horizontalmente a la derecha -->
+      <div class="colored" >
+        <ion-fab-button size="small" color="primary" (click)="editPost(post)">
+          <ion-icon name="pencil-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button id="foro_eliminar" size="small" color="danger" (click)="deletePost(post)">
+          <ion-icon name="trash-outline"></ion-icon>
+        </ion-fab-button>
+      </div>
+    </ion-card>
+  </ion-list>
+  
+
+</ion-content>

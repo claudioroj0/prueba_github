@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="primary">
+
+    <ion-title>
+      <h3 #titulo class="ion-text-center move-right"> {{ 'Welcome.TituloSistema' | translate }} </h3>
+    </ion-title>
+
+    <div slot="end">
+      <!-- Botón para escanear QR oculto para administradores -->
+      <ion-button *ngIf="!isAdmin" (click)="sendClickEvent('scan')" size="small" fill="clear">
+        <ion-icon name="qr-code-outline" color="light"></ion-icon>
+      </ion-button> 
+
+      <!-- Botón para salir siempre visible -->
+      <ion-button id="salir" (click)="logout()" size="small" fill="clear">
+        <ion-icon name="log-out-outline" color="light"></ion-icon>
+      </ion-button>
+    </div>
+
+  </ion-toolbar>
+</ion-header>

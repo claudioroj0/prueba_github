@@ -1,0 +1,65 @@
+<ion-content [fullscreen]="true" class="ion-padding-horizontal ion-text-center">
+  <div class="logo-container ion-text-center">
+    <img src="../../../assets/images/LogoDuoc.jpeg" alt="Logo Duoc UC" class="logo" />
+  </div>
+  <div class="centrar">
+    <div class="enmarcar">
+      <div *ngIf="asistencia; else noData" class="margin-top">
+        <h1> Has quedado presente en tu clase </h1>
+        <table class="data-table">
+          <tbody>
+            <tr>
+              <td>{{'Miclase.Sede'| translate }}</td>
+              <td>{{ asistencia.sede }}</td>
+            </tr>
+            <tr>
+              <td>{{'Miclase.Sigla'| translate }}</td>
+              <td>{{ asistencia!.idAsignatura }}</td>
+            </tr>
+            <tr>
+              <td>{{'Miclase.Seccion'| translate }}</td>
+              <td>{{ asistencia!.seccion }}</td>
+            </tr>
+            <tr>
+              <td>{{'Miclase.Asignatura'| translate }}</td>
+              <td>{{ asistencia!.nombreAsignatura }}</td>
+            </tr>
+            <tr>
+              <td>{{'Miclase.Profesor'| translate }}</td>
+              <td>{{ asistencia!.nombreProfesor }}</td>
+            </tr>
+            <tr>
+              <td>{{'Miclase.Dia'| translate }}</td>
+              <td>{{ asistencia!.dia }}</td>
+            </tr>
+            <tr>
+              <td>{{'Miclase.BloqueInicio'| translate }}</td>
+              <td>{{ asistencia!.bloqueInicio }}</td>
+            </tr>
+            <tr>
+              <td>{{'Miclase.BloqueTermino'| translate }}</td>
+              <td>{{ asistencia!.bloqueTermino }}</td>
+            </tr>
+            <tr>
+              <td>{{'Miclase.Inicio'| translate }}</td>
+              <td>{{ asistencia!.horaInicio }}</td>
+            </tr>
+            <tr>
+              <td>{{'Miclase.Termino'| translate }}</td>
+              <td>{{ asistencia!.horaFin }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <ng-template #noData>
+        <p>{{'Miclase.notf'| translate }}</p>
+      </ng-template>
+
+      <!-- Botón Cerrar Sesión -->
+      <ion-button (click)="cerrarSesion()" shape="round" class="margin-top" color="medium">
+        {{'Logoutt'| translate }}
+      </ion-button>
+
+    </div>
+  </div>
+</ion-content>

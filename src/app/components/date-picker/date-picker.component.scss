@@ -1,0 +1,21 @@
+/* Estilo general para el input de fecha */
+ion-input {
+  --background: #666666; /* Fondo blanco */
+  --color: #FFFFFF; /* Texto oscuro */
+  --border-color: #000000; /* Borde gris claro */
+  --padding-start: 20px;
+  --padding-end: 20px;
+  --height: 50px; /* Altura del input */
+  font-size: 16px; /* Tamaño de texto */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.paleta-colores{
+  color: #1A1A1A;
+  color: #FFFFFF;
+  color: #FFB800;
+  color: #666666;
+  color: #000000;
+  color: #eeeeee;
+}

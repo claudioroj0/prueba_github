@@ -1,0 +1,95 @@
+<ion-content [fullscreen]="true">
+  <!-- Imagen del logo centrada y con tamaño mediano -->
+  <div class="logo-container ion-text-center">
+    <img src="../../../assets/images/LogoDuoc.jpeg" alt="Logo Duoc UC" class="logo" />
+  </div>
+
+  <!-- Título centrado -->
+  
+
+  <!-- Contenedor centrado estilo card -->
+  
+    
+    <ion-card class="enmarcar ion-text-center">
+      <h1 class="titulo-text ion-text-center">{{ 'Registrar.Titulo' | translate }}</h1>
+      <div class="div2">
+        <!-- Campo Usuario -->
+        <ion-item class="interno" #itemCuenta >
+          <ion-input  [(ngModel)]="registro.userName" label="{{'Registrar.Cuenta' | translate}}" labelPlacement="floating" required ></ion-input>
+        </ion-item>
+
+        <!-- Campo Nombre -->
+        <ion-item class="interno" #itemNombre >
+          <ion-input  [(ngModel)]="registro.firstName" label="{{'Registrar.Nombre' | translate}}" labelPlacement="floating" required ></ion-input>
+        </ion-item>
+
+        <!-- Campo Apellido -->
+        <ion-item class="interno" #itemApellido >
+          <ion-input  [(ngModel)]="registro.lastName" label="{{'Registrar.Apellido' | translate}}" labelPlacement="floating" required ></ion-input>
+        </ion-item>
+
+        <!-- Campo Correo -->
+        <ion-item class="interno" #itemCorreo>
+          <ion-input [(ngModel)]="registro.email" label="{{ 'Registrar.Correo' | translate }}" labelPlacement="floating" required ></ion-input>
+        </ion-item>
+
+        <!-- Campo Direccion -->
+        <ion-item class="interno" #itemDireccion>
+          <ion-input [(ngModel)]="registro.address" label="{{ 'Registrar.Direccion' | translate }}" labelPlacement="floating" required ></ion-input>
+        </ion-item>
+
+        <!-- Campo Pregunta Secreta -->
+        <ion-item class="interno" #itemPreguntaSecreta>
+          <ion-input [(ngModel)]="registro.secretQuestion" label="{{ 'Registrar.PreguntaSecreta' | translate }}" labelPlacement="floating" required ></ion-input>
+        </ion-item>
+
+        <!-- Campo Respuesta Secreta -->
+        <ion-item class="interno" #itemRespuestaSecreta>
+          <ion-input [(ngModel)]="registro.secretAnswer" label="{{ 'Registrar.RespuestaSecreta' | translate }}" labelPlacement="floating" required ></ion-input>
+        </ion-item>
+
+        <!-- Campo Nivel educacional -->
+        <ion-item #itemEducacion class="font-size-12 interno">
+          <ion-select [(ngModel)]="registro.educationalLevel!.id" (ionChange)="actualizarNivelEducacional($event)" label="{{'Registrar.Educacion' | translate}}" position="floating" required>
+            <ion-select-option *ngFor="let nivelEducacional of listaNivelesEducacionales" [value]="nivelEducacional.id">
+              {{nivelEducacional.name}}
+            </ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <!-- Campo Fecha de nacimiento -->
+        <ion-item  #itemFechaNacimiento class="font-size-12 interno">
+          <app-date-picker 
+            [(ngModel)]="registro.dateOfBirth"
+            (ionChange)="onFechaNacimientoChange($event)"
+            label="{{'Registrar.FechaNacimiento' | translate}}"
+            labelPlacement="floating" required>
+          </app-date-picker>
+        </ion-item>
+
+        <!-- Campo Contraseña -->
+        <ion-item class="interno" #itemContrasena>
+          <ion-input [(ngModel)]="registro.password" label="{{ 'Registrar.Contrasena' | translate }}" labelPlacement="floating" type="password" required></ion-input>
+        </ion-item>
+
+        <!-- Campo Confirmar Contraseña -->
+        <ion-item class="interno" #itemConfirmarContrasena>
+          <ion-input [(ngModel)]="confirmarPassword" label="{{ 'Registrar.ConfirmarContrasena' | translate }}" labelPlacement="floating" type="password" required></ion-input>
+        </ion-item>
+
+
+        <!-- Botón de Registro -->
+        
+      </div>
+      <ion-button class="botones-container" shape="round" color="primary" (click)="registrarUsuario()">
+        {{ 'Registrar.Boton' | translate }}
+      </ion-button>
+      <!-- Botón de Registro -->
+      <ion-button shape="round" size="small" (click)="navegarIngreso()">
+        <ion-icon slot="start" name="log-out"></ion-icon>
+        {{ 'Correo.Link.IniciarSesion' | translate }}
+      </ion-button>
+
+    </ion-card>
+
+</ion-content>

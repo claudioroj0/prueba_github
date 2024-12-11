@@ -1,0 +1,50 @@
+<ion-content [fullscreen]="true">
+  <!-- Imagen del logo centrada y con tamaño mediano -->
+  <div class="logo-container ion-text-center">
+    <img src="../../../assets/images/LogoDuoc.jpeg" alt="Logo Duoc UC" class="logo" />
+  </div>
+
+  <!-- Título centrado -->
+  <h1 class="titulo-text">{{ 'correcto.titulo' | translate }}</h1>
+
+  <!-- Contenedor centrado estilo card -->
+  <div class="centrar">
+    <ion-card class="enmarcar ion-text-center">
+      <ion-card-header>
+        <h2 class="ion-text-center">{{ 'Correo.Titulo.RecuperarContrasena' | translate }}</h2>
+      </ion-card-header>
+        
+      <ion-card-content>
+        <ion-card class="contenido-card">
+          <ion-card-header>
+            <ion-card-subtitle>{{ 'Correo.Paso1.IngresarCorreo' | translate }}</ion-card-subtitle>
+          </ion-card-header>
+
+          <!-- Input y botón de recuperar contraseña -->
+          <ion-card-content>
+            <ion-item lines="none" class="input-container">
+              <ion-input
+                type="email"
+                [(ngModel)]="email"
+                placeholder="{{ 'Correo.Input.IngresarCorreo' | translate }}"
+                class="input-correo">
+              </ion-input>
+            </ion-item>
+            <ion-button 
+              expand="block" 
+              (click)="validateEmail()"
+              class="boton-recuperar">
+              {{ 'Correo.Boton.RecuperarContrasena' | translate }}
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-card-content>
+
+      <!-- Botón de iniciar sesión -->
+      <ion-button shape="round" size="small" (click)="navegarIngreso()">
+        <ion-icon slot="start" name="log-out"></ion-icon>
+        {{ 'Correo.Link.IniciarSesion' | translate }}
+      </ion-button>
+    </ion-card>
+  </div>
+</ion-content>

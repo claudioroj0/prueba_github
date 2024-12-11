@@ -1,0 +1,23 @@
+<ion-content [fullscreen]="true" class="ion-padding-horizontal ion-text-center">
+  <div class="logo-container ion-text-center">
+    <img src="../../../assets/images/LogoDuoc.jpeg" alt="Logo Duoc UC" class="logo" />
+  </div>
+
+  <h1 id="wellcome_title">
+    {{ 'Welcome.Bienvenido' | translate }}
+  </h1>
+
+  <!-- Mostrar un mensaje diferente según si es admin o no -->
+  <h1 id="wellcome_user" *ngIf="isAdmin; else regularUser">
+    {{ user.firstName }} {{ user.lastName }}!
+  </h1>
+  <ng-template #regularUser>
+    <h1 id="wellcome_user">{{ user.firstName }} {{ user.lastName }}!</h1>
+  </ng-template>
+
+  <!-- Texto del código QR solo para usuarios no administradores -->
+  <h2 *ngIf="!isAdmin">
+    {{ 'CodigoQR.Escaneatitle' | translate }}
+    <ion-icon name="qr-code-outline"></ion-icon>
+  </h2>
+</ion-content>

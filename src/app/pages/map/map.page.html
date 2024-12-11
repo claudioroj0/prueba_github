@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center" color="primary">
+    <ion-title>
+      {{ 'Pregunta.Titulo.SistemaAsistencia' | translate }}
+    </ion-title>
+    <div slot="end">
+      <ion-button size="small" shape="round" (click)="goBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <!-- El div con id "mapId" será donde se mostrará el mapa -->
+  <div id="mapId" style="height: 100%;"></div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="ion-text-center" color="primary">
+    <ion-button shape="round" color="secondary" size="small"
+        (click)="goToDUOC()" >
+      DUOC 
+    </ion-button>
+
+    <ion-button shape="round" color="secondary" size="small"
+        (click)="goToMyPosition()">
+        {{"Miruta.Boton.Aqui"|translate}}
+    </ion-button>
+
+    <ion-button shape="round" color="secondary" size="small"
+        (click)="showRouteToDuoc()">
+        {{"Miruta.Boton.Ruta"|translate}}
+    </ion-button>
+
+    <div *ngIf="distance">
+      <br>
+      {{ distance }}
+    </div>
+  </ion-toolbar>
+</ion-footer>
